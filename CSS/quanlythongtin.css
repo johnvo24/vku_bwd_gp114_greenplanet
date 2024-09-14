@@ -1,0 +1,91 @@
+:root {
+    --background-color-green:  rgb(0, 130, 0);
+}
+.formthongtincanhan {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(23, 48, 25);
+    padding-top: 15px;
+    padding-bottom: 100px;
+}
+.formthongtincanhan form {
+    width: 80%;
+    margin: auto;
+    border: solid 1px var(--button-border-color);
+    background-color: white;
+    padding: 20px;
+}
+
+.formthongtincanhan > form label {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.formthongtincanhan form .form-control:focus {
+    box-shadow: 0 0 8px rgb(0, 255, 8);
+    border-color: var(--button-border-color);
+}
+.formthongtincanhan > form > div:not(.formthongtincanhan > form > div:last-child ) {
+    width: 100%;
+
+}
+.formthongtincanhan > form > div > div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    right: 0;;
+}
+
+.btn_close {
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.btn_update {
+    cursor: pointer;
+}
+.btn_close > i {
+    font-size: 30px;
+    padding: 0 2px;
+    color: red;
+    display: block;
+    box-shadow: 0 0 3px white;
+    margin: auto;
+}
+.btn_close:hover > i{
+    color: rgb(223, 7, 7);
+}
+.btn_close:active{
+    transform: scale(0.9);
+}
+.btn_close:active > i{
+    transform: scale(0.9);
+}
+.btn_reset {
+    background-color: rgb(225, 24, 24);
+    padding: 3px 6px;
+    font-weight: bolder;
+    border: solid 1px rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-bottom: 40px;
+}
+.btn_reset:hover {
+    background-color: rgb(194, 19, 19);
+}
+.status {
+    color:rgb(3, 184, 9);
+    height: 20px;
+    margin: 0;
+    font-size: 10px;
+}
+@media screen and (max-width: 600px) {
+    .formthongtincanhan form {
+        width: 100%;
+    }
+}

@@ -1,0 +1,118 @@
+:root {
+    --background-color-green:  rgb(0, 130, 0);
+    --button-border-color: rgb(19, 158, 11);
+    --button-background-color: rgb(27, 231, 16);
+    --border-color: rgb(9, 174, 9);
+}
+.info_bt {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-y: scroll;
+    display: none;
+}
+.info_bt::-webkit-scrollbar {
+    width: 6px;
+    background-color: white;
+}
+.info_bt::-webkit-scrollbar-thumb {
+    background-color: var(--button-border-color);
+    border-radius: 2px;
+    border: solid 1px white;
+}
+.btn_close {
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0;
+}
+.btn_close > i {
+    font-size: 30px;
+    padding: 0 2px;
+    color: red;
+    display: block;
+    box-shadow: 0 0 3px white;
+    margin: auto;
+}
+.btn_close:hover > i{
+    color: rgb(223, 7, 7);
+}
+.btn_close:active{
+    transform: scale(0.9);
+}
+.btn_close:active > i{
+    transform: scale(0.9);
+}
+.info_bt .view_info{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    background-color: rgb(0, 130, 0);
+    border-radius: 0;
+    padding-bottom: 10px;
+    border: 1px solid #26de81;
+}
+.info_bt .view_info .content_t{
+    padding-top: 0;
+}
+.info_bt .view_info .content_t .title_header h2{
+    padding-top: 12px;
+}
+.info_bt .view_info .content_t .content_bt{
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px 20px 20px 20px;
+    padding-top: 20px;
+    padding-bottom: 3px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 5px 30px, rgb(0 0 0 / 23%) 0px 6px 6px;
+}
+.info_bt .view_info .content_t .content_bt .avatar{
+    margin: auto;
+    border: 3px solid greenyellow;
+    width: 155px;
+    height: 156px;
+    border-radius: 77px;
+}
+.info_bt .view_info .content_t .content_bt .avatar img{
+    border-radius: 75px;
+}
+.info_bt .view_info .content_t .content_bt > p{
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.info_bt .view_info .content_t .infomation_bd{
+    height: auto;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0px 20px 0px 20px;
+    padding: 25px 0px 10px 0px;
+    margin-bottom: 20px;
+}
+.info_bt .view_info .content_t .infomation_bd ul li{
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+.info_bt .view_info .content_t .infomation_bd button{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .info_bt {
+        margin: 0;
+        padding: 0;
+    }
+    .info_bt .view_info{
+        width: 100%;
+    }
+}

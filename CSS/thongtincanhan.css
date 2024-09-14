@@ -1,0 +1,251 @@
+.thongtin_canhan{
+    width: 40%;
+    height: auto;
+    background-color: rgb(19, 158, 11);
+    margin: auto;
+    display: flex;
+    padding: 22px 22px;
+    box-shadow: 0 0 5px rgb(0, 0, 0);
+    border: solid 1px rgb(9, 174, 9);
+}
+.thongtin_canhan > div {
+    box-shadow: 0 0 10px black;
+}
+.thongtin_canhan > div {
+    text-shadow: 0 0 1px rgb(139, 139, 139);
+    font-family: cambria;
+}
+.thongtin_canhan > div i {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+.thongtin_canhan > div:hover {
+    background-color: rgb(235, 235, 235);
+}
+.thongtin_canhan .first_btn{
+    width: 50%;
+    height: 200px;
+    background-color: #fff;
+    margin-right: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.thongtin_canhan .second_btn{
+    width: 50%;
+    height: 200px;
+    background-color: #fff;
+    margin-left: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.thongtin_canhan .first_btn div{
+    text-align: center;
+    margin-top: 5px;
+}
+.thongtin_canhan .first_btn div i{
+    font-size: 130px;
+}
+.thongtin_canhan .first_btn div p{
+    font-size: 22px;
+    font-family: serif;
+    font-weight: 600;
+}
+.thongtin_canhan .first_btn div:last-child{
+    margin-top: 12px;
+}
+
+.thongtin_canhan .second_btn div{
+    text-align: center;
+    margin-top: 5px;
+}
+.thongtin_canhan .second_btn div i{
+    font-size: 130px;
+}
+.thongtin_canhan .second_btn div p{
+    font-size: 22px;
+    font-family: serif;
+    font-weight: 600;
+}
+.thongtin_canhan .second_btn div:last-child{
+    margin-top: 12px;
+}
+
+@media screen and (max-width: 1390px){
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1290px){
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 18px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1190px){
+    .thongtin_canhan .first_btn div i{
+        font-size: 110px;
+    }
+    .thongtin_canhan .second_btn div i{
+        font-size: 110px;
+    }
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 16px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 16px;
+    }
+    .thongtin_canhan .first_btn{
+        height: 170px;
+    }
+    .thongtin_canhan .second_btn{
+        height: 170px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .thongtin_canhan .first_btn div i{
+        font-size: 90px;
+    }
+    .thongtin_canhan .second_btn div i{
+        font-size: 90px;
+    }
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .first_btn{
+        height: 150px;
+    }
+    .thongtin_canhan .second_btn{
+        height: 150px;
+    }
+    .thongtin_canhan{
+        width: 444px;
+    }
+}
+
+@media screen and (max-width: 886px){
+    .thongtin_canhan .first_btn div i{
+        font-size: 70px;
+    }
+    .thongtin_canhan .second_btn div i{
+        font-size: 70px;
+    }
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .first_btn{
+        height: 130px;
+    }
+    .thongtin_canhan .second_btn{
+        height: 130px;
+    }
+    .thongtin_canhan{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 730px){
+    .thongtin_canhan .first_btn div i{
+        font-size: 60px;
+    }
+    .thongtin_canhan .second_btn div i{
+        font-size: 60px;
+    }
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .first_btn{
+        height: 130px;
+    }
+    .thongtin_canhan .second_btn{
+        height: 130px;
+    }
+    .thongtin_canhan{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .thongtin_canhan .first_btn div i{
+        font-size: 40px;
+    }
+    .thongtin_canhan .second_btn div i{
+        font-size: 40px;
+    }
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .first_btn{
+        height: 110px;
+    }
+    .thongtin_canhan .second_btn{
+        height: 110px;
+    }
+    .thongtin_canhan{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .thongtin_canhan .first_btn div i{
+        font-size: 40px;
+    }
+    .thongtin_canhan .second_btn div i{
+        font-size: 40px;
+    }
+    .thongtin_canhan .first_btn div:last-child{
+        margin-top: 15px;
+    }
+    .thongtin_canhan .first_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .second_btn div p{
+        font-size: 14px;
+    }
+    .thongtin_canhan .first_btn{
+        height: 110px;
+    }
+    .thongtin_canhan .second_btn{
+        height: 110px;
+    }
+    .thongtin_canhan{
+        width: 280px;
+    }
+}

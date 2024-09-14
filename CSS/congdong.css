@@ -1,0 +1,618 @@
+:root {
+    --background-color-green:  rgb(0, 130, 0);
+    --button-border-color: rgb(19, 158, 11);
+    --button-background-color: rgb(27, 231, 16);
+    --border-color: rgb(9, 174, 9);
+}
+
+.traidat {
+    position: absolute;
+}
+.timkiemchung {
+    position: absolute;
+}
+
+div.main {
+    width: 100%;
+    background-color: rgb(23, 48, 25);
+    padding-bottom: 100px;
+
+    border-radius: 0;
+    position: unset;
+}
+
+.title {
+    height: 55px;
+    background-color: var(--background-color-green);
+    margin: 0;
+    border-top: solid 2px var(--border-color);  
+    border-bottom: solid 1px var(--border-color);
+    border-radius: 0;
+}
+.title > p {
+    line-height: 55px;
+    font-size: 27px;
+    font-weight: bolder;
+    padding-left: 15px;
+    color: rgb(254, 254, 254);
+    text-shadow: 1px 1px 1px #000;
+    margin: 0;
+}
+
+/* CHIẾN DỊCH NỔI BẬT-------------------------------------------------- */
+.congdong > .title {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    align-items: center;
+}
+.congdong > .title > div {
+    display: flex;
+    height: 40px;
+}
+.congdong > .title > div > a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(208, 255, 0);
+    text-shadow: 1px 1px 1px #000;
+    font-size: 18px;
+    line-height: 40px;
+    padding: 2px 15px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+.congdong > .title > div > .trangcanhan {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: solid 1px white;
+}
+.congdong > .title > div > .trangcongdong {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: solid 1px white;
+}
+.congdong > .title > div > a:hover {
+    font-size: 19px;
+    padding: 1px 13px;
+    color: rgb(227, 255, 102);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.congdong > .title > div .current_page {
+    font-size: 19px;
+    padding: 1px 13px;
+    color: rgb(227, 255, 102);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/*CONTENT -----------------------*/
+.congdong > .content {
+    width: 80%;
+    padding: 4px 10px 10px 10px;
+    margin: auto;
+    border: solid 1px var(--border-color);
+    border-top: none;
+    border-radius: 0;
+    background-color: var(--background-color-green);
+}
+.congdong > .content > .khoanhkhac {
+    width: 100%;
+    padding: 10px 20px;
+    border: solid 1px var(--border-color);
+    border-top: none;
+    border-radius: 0;
+    background-color: white;
+}
+.congdong > .content > .khoanhkhac > ul {
+    width: 100%;
+    padding: 0;
+}
+.congdong > .content > .khoanhkhac > ul > li {
+    margin-bottom: 40px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 30px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar {
+    border-radius: 47px;
+    border: solid 2px rgb(32, 216, 4);
+    width: 94px; 
+    height: 94px;
+    padding: 0;
+    margin-right: 10px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > a{
+    cursor: pointer;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > a > img {
+    border-radius: 45px;
+    width: 90px;
+    height: 90px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > .theodoi {
+    text-align: center;
+    font-size: 25px;
+    margin-top: -10px;
+    color: rgb(5, 200, 5);
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > .theodoi > i{
+    cursor: pointer;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > .theodoi > i:active {
+    transform: scale(1.25);
+}
+
+.tuongtac {
+    padding-top: 20px;
+}
+.tuongtac > div {
+    text-align: center;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > .tuongtac > div > i {
+    cursor: pointer;
+    font-size: 35px;
+    color: black;
+}
+.congdong > .content > .khoanhkhac > ul > li > .avatar > .tuongtac > div > i:active {
+    transform: scale(1.25);
+}
+
+.congdong > .content > .khoanhkhac > ul > li > .post {
+    margin-top: 15px;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    flex: 1;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 500px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    padding-bottom: 20px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption {
+    width: 100%;
+    position: absolute;
+    background-color: rgb(0, 130, 0);
+    color: white;
+    padding: 10px;
+    top: 0px;
+    left: 0px;
+    text-shadow: 1px 1px 1px #000;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption:hover {
+    cursor: pointer;
+}
+
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > h6 {
+    font-size: 11px;
+    position: relative;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > h6 > i {
+    transform: scaleX(1.25);
+    font-size: 22px;
+    position: absolute;
+    right: 30px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > h6 > b {
+    font-size: 16px;
+    color: yellow
+}
+
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > p::-webkit-scrollbar {
+    width: 6px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > p::-webkit-scrollbar-track {
+    border-radius: 3px;
+    background-color: rgb(75, 74, 74);
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > p::-webkit-scrollbar-thumb{
+    background-color: rgb(0, 255, 0);
+    box-shadow: 0px 1px 5px rgba(255, 255, 255, 0.922);
+    border-radius: 3px;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .caption > p {
+    max-height: 92px;
+    margin: 0;
+    margin-right: -5px;
+    text-align: justify;
+    font-size: 13px;
+    overflow-y: scroll;
+    padding-right: 8px;
+
+    display: none;
+}
+
+.congdong > .content > .khoanhkhac > ul > li > .post > .picture {
+    height: 100%;
+    padding: 2px 0;
+}
+.congdong > .content > .khoanhkhac > ul > li > .post > .picture > img {
+    width: 90%;
+    display: block;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 3px;
+}
+
+    /* Comment */
+.congdong > .content > .khoanhkhac > ul > li > .commentbox {
+    padding: 0;
+    display: none;
+}
+.commentbox > ul > li > .avatar{
+    width: 42px;
+    height: 42px;
+    border: solid 1px rgb(0, 0, 0);
+    border-radius: 21px;
+    padding: 0;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.commentbox > ul > li > .avatar > img {
+    border-radius: 20px;
+}
+.commentbox > ul {
+    background-color: rgb(26, 114, 15);
+    padding: 10px;
+    margin-left: 104px;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+.commentbox > ul > li {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    padding: 3px 5px;
+    margin: 0;
+    margin-bottom: 5px;;
+}
+.commentbox > ul > li > .comment {
+    padding-left: 0;
+    flex: 1;
+}
+.commentbox > ul > li > .comment > p {
+    margin: 0;
+    padding: 0;
+}
+.commentbox > ul > li > .comment > .commentline {
+    font-size: 13px;
+}
+
+
+.commentbox > .binhluan {
+    margin-top: 5px;
+    margin-left: 110px;
+    padding: 10px 10px;
+    background-color: rgb(26, 114, 15);
+    border-radius: 20px;
+}
+.commentbox > .binhluan > input {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 10px;
+}
+.commentbox > .binhluan > button {
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-left: -2px;
+    border: solid 1px rgb(4, 53, 4);
+    background-color: var(--button-background-color);
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+}
+.commentbox > .binhluan > button:hover {
+    transform: scale(1.1);
+    transition: 300ms;
+}
+
+
+
+div.coat {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.535);
+    position: fixed;
+    padding-bottom: 100px;
+    top: 0;
+}
+div.coat .middle_content {
+    position: relative;
+}
+div.coat .header {
+    transition: relative;
+    animation: coateffective-header 1s ease-in-out;
+}
+div.coat .footer {
+    position: fixed;
+    bottom: 0;
+    animation: coateffective-footer 900ms ease-in-out;
+}
+
+div.coat .middle_content {
+    padding: 20px 0;
+    width: 100%;
+}
+div.coat .middle_content .adv {
+    width: 90%;
+    height: 350px;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgb(56, 56, 56);
+    background-color: black;
+    padding: 5px 4px 5px 5px;
+}
+div.coat .middle_content .adv iframe {
+    box-sizing: content-box;
+    padding: 0;
+    width: 100%;
+    margin-top: 10px;
+} 
+div.coat .middle_content img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+
+div.btn_coat {
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+    width: 64px;
+    height: 64px;
+    border: solid 2px var(--border-color);
+    border-radius: 32px;
+}
+div.btn_coat a, div.btn_coat a img{
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+div.btn_coat a {
+    position: relative;
+}
+div.btn_coat a div {
+    width: 100%;
+    height: 100%;
+}
+div.btn_coat a i {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-size: 18px;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+    color: white;
+    
+}
+div.btn_coat:hover a i {
+    line-height: 60px;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 30px;
+}
+
+
+
+@keyframes coateffective-header {
+    0% {
+        margin-top: -100px;
+    }
+    100% {
+        margin-top: 0;
+    }
+}
+@keyframes coateffective-footer {
+    0% {
+        margin-bottom: -50px;
+    }
+    100% {
+        margin-bottom: 0;
+    }
+}
+@keyframes coateffective-header-out {
+    0% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: -800px;
+    }
+}
+@keyframes coateffective-footer-out {
+    0% {
+        margin-bottom: 0px;
+    }
+    100% {
+        margin-bottom: -900px;
+    }
+}
+
+
+.trangcanhankhach {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.75);
+    overflow-y: scroll;
+    display: none;
+}
+.trangcanhankhach::-webkit-scrollbar {
+    width: 6px;
+    background-color: white;
+}
+.trangcanhankhach::-webkit-scrollbar-thumb {
+    background-color: var(--button-border-color);
+    border-radius: 2px;
+    border: solid 1px white;
+}
+.btn_close {
+    height: fit-content;
+    width: fit-content;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.btn_close > i {
+    font-size: 30px;
+    padding: 0 2px;
+    color: red;
+    display: block;
+    box-shadow: 0 0 3px white;
+    margin: auto;
+}
+.btn_close:hover > i{
+    color: rgb(223, 7, 7);
+}
+.btn_close:active{
+    transform: scale(0.9);
+}
+.btn_close:active > i{
+    transform: scale(0.9);
+}
+
+
+@media screen and (max-width: 850px) {
+    .congdong > .content > .khoanhkhac > ul > li {
+        display: block;
+    }
+    .avatar {
+        display: flex;
+    }
+    .tuongtac {
+        display: flex;
+    }
+    .avatar > .theodoi {
+        padding-top: 71px;
+        margin-left: -17px;
+        margin-right: 40px;
+    }
+    .tuongtac > .yeuthich {
+        display: flex;
+        margin-right: 40px;
+    }
+    .tuongtac > .yeuthich > i {
+        margin-right: 10px;
+    }
+    .tuongtac > .yeuthich > p {
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .tuongtac > .binhluan {
+        display: flex;
+        margin-right: 50px;
+    }
+    .tuongtac > .binhluan > i {
+        margin-right: 10px;
+    }
+    .tuongtac > .binhluan > p {
+        line-height: 40px;
+        font-size: 20px;
+    }
+
+    .commentbox > ul {
+        margin: 0;
+        margin-top: 5px;
+    }
+    .commentbox > .binhluan {
+        margin: 0;
+        margin-top: 5px;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .post > .picture {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 657px) {
+    .title > p {
+        font-size: 23px;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .post > .caption > h6 > i {
+        font-size: 18px;
+        right: 20px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .congdong > .content {
+        width: 100%;
+    }
+    .trangcanhankhach {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        height: 40px;
+    }
+    .title > p {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .congdong > .content > .khoanhkhac > ul > li > .post > .caption > h6 > b {
+        font-size: 13px;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .post > .caption > h6 > i {
+        font-size: 14px;
+        right: 20px;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .post > .caption > p {
+        font-size: 10px;
+    }
+
+    .congdong > .content > .khoanhkhac > ul > li > .avatar {
+        width: 100%;
+        height: 94px;
+        padding: 2px;
+        box-shadow: rgba(228, 229, 231, 0.12) 0px 2px 4px 0px, rgba(148, 146, 146, 0.32) 0px 2px 16px 0px;
+        border: none;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .avatar > a > img {
+        border: solid 2px rgb(32, 216, 4);    
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .avatar > .theodoi {
+        margin-right: 0;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .avatar > .tuongtac {
+        margin-left: 0;
+    }
+    .congdong > .content > .khoanhkhac > ul > li > .avatar > .tuongtac > div {
+        margin-right: 30px;
+    }
+    .tuongtac {
+        align-items: center;
+        margin-left: -40px;
+        transform: scale(0.85);
+    }
+    .tuongtac > .yeuthich {
+        margin-right: 50px;
+    }
+    .congdong > .title > div {
+        transform: scale(0.7, 0.7);
+        margin-right: -20px;
+    }
+    .congdong > .title > div > a:active {
+        transform: scale(0.95, 0.95);
+        transition: 100ms;
+    }
+
+    .display_none {
+        display: none;
+    }
+}
